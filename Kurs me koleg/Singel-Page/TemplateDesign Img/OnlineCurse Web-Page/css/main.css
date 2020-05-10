@@ -1,0 +1,161 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --prime-bg: #dee8ea;
+    --prime-text-color: #b8b8b8;
+    --secondary-text-color: #8d8c8c;
+    --black: #000;
+    --white: #fff;
+    --secondary-color: #10c9c3;
+}
+body {
+    background-color: var(--prime-bg);
+    color: var(--prime-text-color);
+}
+html {
+    scroll-behavior: smooth;
+}
+a,
+a::after,
+a::before,
+a:hover,
+a:focus {
+    color: var(--prime-text-color);
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+button {
+    border: none;
+}
+/* oc eshte emri i templatit (class name) */
+.oc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.oc-header {
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+}
+.oc-header nav {
+    width: max-content;
+    height: 100%;
+}
+.oc-header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+}
+.oc-header nav ul li {
+    padding: 0 15px;
+}
+.oc-header nav ul li a {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--black);
+}
+.oc-header nav ul li a:hover,
+.oc-header nav ul li a:focus {
+    color: var(--secondary-color);
+}
+.oc-header-logo {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.oc-container {
+    width: 100%;
+    /* vw- view width */
+    height: 100vh;
+    /* vh- view height */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.oc-container-img img {
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+    background-origin: border-box;
+}
+.oc-container .content {
+    width: 50vw;
+    height: max-content;
+}
+.content-holder {
+    width: 80%;
+}
+.content--title {
+    color: var(--black);
+}
+.content--p {
+    color: var(--secondary-text-color);
+}
+.content--btn {
+    color: var(--white);
+    background-color: var(--secondary-color);
+}
+
+/* sections */
+.oc-about {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
+.oc-about--holder {
+    width: 50vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.oc-about--title {
+    color: var(--black);
+}
+.oc-about--p {
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+.oc-about--signature img {
+    width: 150px;
+    height: auto;
+}
